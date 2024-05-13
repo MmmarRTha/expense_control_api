@@ -21,7 +21,7 @@ export default function BudgetForm() {
                 <input
                     id="budget"
                     type="number"
-                    className="w-full p-2 bg-white border bordger-gray-200"
+                    className="w-full p-2 bg-white border rounded-md bordger-gray-200"
                     placeholder="Define your budget"
                     name="budget"
                     value={budget}
@@ -29,12 +29,14 @@ export default function BudgetForm() {
                 />
             </div>
 
-            <input
-                type="submit"
-                value='Define Budget'
-                className="w-full p-2 font-black text-white uppercase rounded-lg cursor-pointer  bg-sky-600 hover:bg-sky-700 disabled:opacity-40"
-                disabled={isValid}
-            />
+            <div className="flex justify-center ">
+                <input
+                    type="submit"
+                    value='Define Budget'
+                    className="w-full p-2 mt-5 font-black text-white uppercase cursor-pointer bg-sky-600 hover:bg-sky-700 disabled:opacity-40 rounded-xl max-w-64"
+                    disabled={isValid}
+                />
+            </div>
         </form>
     )
 }
