@@ -1,6 +1,6 @@
-// import type { Category } from "../types";
+import type { Category } from "../types";
 
-export const categories = [
+export const categories : Category[] = [
     { id: '1', name: 'Savings', icon: 'savings' },
     { id: '2', name: 'Food', icon: 'food' },
     { id: '3', name: 'Home', icon: 'home' },
