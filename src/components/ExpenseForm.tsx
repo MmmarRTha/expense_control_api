@@ -43,6 +43,13 @@ export default function ExpenseForm() {
             return
         }
         dispatch({ type: 'add-expense', payload: { expense } });
+
+        setExpense({
+            expenseName: '',
+            amount: 0,
+            category: '',
+            date: new Date()
+        })
     }
 
   return (
@@ -65,6 +72,7 @@ export default function ExpenseForm() {
                 name='expenseName'
                 placeholder='Enter Expense Name'
                 onChange={handleChange}
+                value={expense.expenseName}
             />
         </div>
 
@@ -81,6 +89,7 @@ export default function ExpenseForm() {
                 name='amount'
                 placeholder='Add amount expense: example 100'
                 onChange={handleChange}
+                value={expense.amount}
             />
         </div>
 
@@ -95,6 +104,7 @@ export default function ExpenseForm() {
                 name='category'
                 className='p-2 border border-gray-300 rounded bg-slate-100'
                 onChange={handleChange}
+                value={expense.category}
             >
                 <option value="">-- Select --</option>
                 {categories.map( category => (
