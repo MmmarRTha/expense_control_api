@@ -8,7 +8,7 @@
   @apply text-lg font-bold text-white uppercase;
 }
 .swipeable-list-item__leading-actions{
-  @apply bg-blue-600;
+  @apply bg-sky-600;
 }
 .swipeable-list-item__trailing-actions {
   @apply bg-pink-600;
