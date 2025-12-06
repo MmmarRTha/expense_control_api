@@ -9,7 +9,7 @@ export default function FilterByCategory() {
         dispatch({type: 'add-filter-category', payload: {id: e.target.value}})
     }
     return (
-        <div className="w-11/12 p-10 mx-auto rounded-lg shadow-md lg:w-full md:max-w-3xl bg-gradient-to-r from-gray-200 to-gray-300 shadow-indigo-300">
+        <div className="w-11/12 p-10 mx-auto rounded-lg shadow-md lg:w-full md:max-w-3xl bg-linear-to-r from-gray-200 to-gray-300 shadow-indigo-300">
             <form>
                 <div className="flex flex-col gap-5 md:flex-row md:items-center">
                     <label className='text-lg font-bold' htmlFor="category">Filter Expenses</label>
